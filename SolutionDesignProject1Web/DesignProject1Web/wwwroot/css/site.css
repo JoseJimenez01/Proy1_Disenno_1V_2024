@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar, footer, nav button, footer div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema oscuro */
+body.dark-mode {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar, body.dark-mode footer, body.dark-mode nav button, body.dark-mode footer div {
+    background-color: #5a5a5a;
+    color: #e0e0e0;
+}

@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "DesignProject1Web\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "DesignProject1Web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-12T21:25:29.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DesignProject1Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DesignProject1Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-12T21:25:19.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T21:11:36.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

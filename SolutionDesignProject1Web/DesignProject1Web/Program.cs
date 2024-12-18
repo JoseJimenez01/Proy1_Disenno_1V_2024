@@ -1,3 +1,8 @@
+using DesignProject1Web.Controllers;
+using DesignProject1Web.Models;
+using System.Net.Http.Headers;
+using System.Net.Http;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +18,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -22,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Currency}/{action=List}/{id?}");
 
 app.Run();

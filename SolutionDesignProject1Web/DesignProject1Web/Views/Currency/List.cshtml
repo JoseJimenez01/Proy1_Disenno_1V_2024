@@ -1,0 +1,62 @@
+﻿@* Views/Currency/List.cshtml *@
+@{
+    ViewData["Title"] = "Lista de Divisas";
+}
+
+<!-- Navbar -->
+<nav style="display: flex; justify-content: space-between; align-items: center; background-color: #4CAF50; padding: 10px; color: white;">
+    <!-- redirecciones a otras paginas de la app -->
+    <div style="display: flex; gap: 20px;">
+        <button style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">Conversor</button>
+        <button style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">Favoritas</button>
+    </div>
+
+    <!-- Seleccion de idioam y perfil -->
+    <div style="display: flex; gap: 20px;">
+        <button style="background: rgba(255, 255, 255, 0.7); border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">
+            Perfil
+        </button>
+        <select style="background: rgba(255, 255, 255, 0.7); border: none; padding: 5px; border-radius: 5px; cursor: pointer;">
+            <option selected>Español</option>
+            <option>Inglés</option>
+        </select>
+    </div>
+</nav>
+
+<!-- Div principal: Aqui va tanto la lista de divisas como el grafico de la divisa seleccionada -->
+<div style="background-color: #f0fff0; padding: 20px; margin: 20px auto; width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <div style="display: flex; gap: 20px;">
+        <!-- Lista de Divisas: Esto debe usar la informacion sacada del API -->
+        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-bottom: 10px;">Buscar divisas</h3>
+            <input type="text" placeholder="Buscar divisas..."
+                   style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+
+            <!-- Div con cada una de las divisas sacadas: Esto debe ser un for each una vez obtenido el currencyRates del API -->
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <strong>Dólar</strong><br>USD - 0.00
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <strong>Colón Costarricense</strong><br>CRC - 0.00
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <strong>EURO</strong><br>EUR - 0.00
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <strong>Peso Argentino</strong><br>ARS - 0.00
+                </div>
+                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                    <strong>Libra Siria</strong><br>SYP - 0.00
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de Gráfico: Usar MYCHART.js para mostrar el grafico con los datos cargados (tiempo-valor) -->
+        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+            <h3>Divisa seleccionada</h3>
+            <p>Gráfico de la divisa seleccionada</p>
+        </div>
+    </div>
+</div>

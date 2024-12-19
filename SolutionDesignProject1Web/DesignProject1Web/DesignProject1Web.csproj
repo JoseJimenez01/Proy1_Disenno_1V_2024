@@ -6,4 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove=".recursos\**" />
+    <Content Remove=".recursos\**" />
+    <EmbeddedResource Remove=".recursos\**" />
+    <None Remove=".recursos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.11" />
+  </ItemGroup>
+
 </Project>

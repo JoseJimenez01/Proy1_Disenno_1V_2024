@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+3EVVBId1mc=",
+  "dgSpecHash": "TvTJoD49vH4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\DesignProject1Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\8.0.11\\microsoft.aspnetcore.authentication.google.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

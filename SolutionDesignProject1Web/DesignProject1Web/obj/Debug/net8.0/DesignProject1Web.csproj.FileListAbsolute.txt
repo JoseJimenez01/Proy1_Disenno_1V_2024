@@ -33,3 +33,6 @@ C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject
 C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\obj\Debug\net8.0\DesignProject1Web.pdb
 C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\obj\Debug\net8.0\DesignProject1Web.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\obj\Debug\net8.0\ref\DesignProject1Web.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\obj\Debug\net8.0\DesignProject1Web.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\Proy1_Disenno_1V_2024\SolutionDesignProject1Web\DesignProject1Web\obj\Debug\net8.0\DesignPr.683B49EB.Up2Date

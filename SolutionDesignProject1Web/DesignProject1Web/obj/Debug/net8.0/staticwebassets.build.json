@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L8fWRqXhc8RCRQbbHA+mX8x0Us0iTfk5ldRvHstPTn0=",
+  "Hash": "9CPV1rmxsDXW5s486moxbJUE0rK+xnRnAsZJ34KLWWI=",
   "Source": "DesignProject1Web",
   "BasePath": "_content/DesignProject1Web",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "i3kqm5kmo1",
-      "Integrity": "PrKOR10hGtdrjrXhMbHgCHASoIKyX/pqq5MzCJNkFd0=",
+      "Fingerprint": "8x0sree5ht",
+      "Integrity": "rAZ84DVcaYUgHumdRejinH90oTPp71IfMKsONcOWHNg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\images\\googleIcon.png",
+      "SourceId": "DesignProject1Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\",
+      "BasePath": "_content/DesignProject1Web",
+      "RelativePath": "images/googleIcon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ii12xpd696",
+      "Integrity": "1nassoOWaVLt72591DXSwSV54qVDdNwy17lrxQnyAvg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\googleIcon.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\js\\site.js",
@@ -1321,6 +1342,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/site.8x0sree5ht.css",
+      "AssetFile": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rAZ84DVcaYUgHumdRejinH90oTPp71IfMKsONcOWHNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 21:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8x0sree5ht"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rAZ84DVcaYUgHumdRejinH90oTPp71IfMKsONcOWHNg="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1331,7 +1397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "968"
+          "Value": "2953"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PrKOR10hGtdrjrXhMbHgCHASoIKyX/pqq5MzCJNkFd0=\""
+          "Value": "\"rAZ84DVcaYUgHumdRejinH90oTPp71IfMKsONcOWHNg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Dec 2024 02:06:58 GMT"
+          "Value": "Wed, 18 Dec 2024 21:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,52 +1419,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PrKOR10hGtdrjrXhMbHgCHASoIKyX/pqq5MzCJNkFd0="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.i3kqm5kmo1.css",
-      "AssetFile": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "968"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PrKOR10hGtdrjrXhMbHgCHASoIKyX/pqq5MzCJNkFd0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 13 Dec 2024 02:06:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i3kqm5kmo1"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PrKOR10hGtdrjrXhMbHgCHASoIKyX/pqq5MzCJNkFd0="
+          "Value": "sha256-rAZ84DVcaYUgHumdRejinH90oTPp71IfMKsONcOWHNg="
         }
       ]
     },
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/googleIcon.ii12xpd696.png",
+      "AssetFile": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\images\\googleIcon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216234"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1nassoOWaVLt72591DXSwSV54qVDdNwy17lrxQnyAvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 23:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ii12xpd696"
+        },
+        {
+          "Name": "label",
+          "Value": "images/googleIcon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1nassoOWaVLt72591DXSwSV54qVDdNwy17lrxQnyAvg="
+        }
+      ]
+    },
+    {
+      "Route": "images/googleIcon.png",
+      "AssetFile": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\images\\googleIcon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216234"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1nassoOWaVLt72591DXSwSV54qVDdNwy17lrxQnyAvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 23:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1nassoOWaVLt72591DXSwSV54qVDdNwy17lrxQnyAvg="
         }
       ]
     },

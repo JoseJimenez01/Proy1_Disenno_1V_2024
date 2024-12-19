@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\views\\conversor\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\views\\conversor\\listado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|c:\\users\\usuario\\onedrive\\escritorio\\proy1_disenno_1v_2024\\solutiondesignproject1web\\designproject1web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99833509-C268-40EE-8A10-9F4AC09C28D4}|DesignProject1Web\\DesignProject1Web.csproj|solutionrelative:designproject1web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "DesignProject1Web\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "DesignProject1Web\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-12T21:25:29.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "DesignProject1Web\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "DesignProject1Web\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-12T21:25:19.511Z",
+              "Title": "Listado.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Views\\Conversor\\Listado.cshtml",
+              "RelativeDocumentMoniker": "DesignProject1Web\\Views\\Conversor\\Listado.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Views\\Conversor\\Listado.cshtml",
+              "RelativeToolTip": "DesignProject1Web\\Views\\Conversor\\Listado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T23:33:43.309Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +49,35 @@
               "RelativeDocumentMoniker": "DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DesignProject1Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T21:11:36.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Program.cs",
+              "RelativeDocumentMoniker": "DesignProject1Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Program.cs",
+              "RelativeToolTip": "DesignProject1Web\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T02:48:54.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "DesignProject1Web\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Proy1_Disenno_1V_2024\\SolutionDesignProject1Web\\DesignProject1Web\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "DesignProject1Web\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwEIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T03:42:11.121Z",
               "EditorCaption": ""
             }
           ]

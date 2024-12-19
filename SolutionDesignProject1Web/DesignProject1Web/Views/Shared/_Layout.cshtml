@@ -3,36 +3,77 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DesignProject1Web</title>
+    <title>@ViewData["Title"] - Web Diseño</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DesignProject1Web.styles.css" asp-append-version="true" />
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
-            <div class="ms-auto">
+            <div class="ms-auto div-navbar">
+                <div class="div-conversor">
+                    <a>Conversor</a>
+                </div>
+                <div class="div-divisas">
+                    <a>Divisas</a>
+                </div>
+                @if (Context.User.Identity.IsAuthenticated)
+                {
+                    <div class="div-favoritos">
+                        <a>Favoritos</a>
+                    </div>
+                }
+                <div class="div-SignUp">
+                    @if (Context.User.Identity.IsAuthenticated)
+                    {
+                        <a class="imagen-texto text-dark" asp-controller="Login" asp-action="Logout">
+                            @if (Context.Session.GetString("UserImage") != null)
+                            {
+                                <img src="@Context.Session.GetString("UserImage")" alt="Imagen de perfil" />
+                            }
+                            else
+                            {
+                                <p>Error al cargar la imagen.</p>
+                            }
+                            @User.Identity.Name
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="imagen-texto text-dark" asp-controller="Login" asp-action="Login">
+                            <img src="~/images/googleIcon.png">
+                            Iniciar sesión
+                        </a>
+                    }
+                </div>
+                <div class="div-cambioIdioma">
+                    <!--
+                        Aqui iria lo del cambio de idioma
+                    -->
+                </div>
+                <div class="div-cambioTema">
+                    <button type="button" id="theme-toggle" aria-label="Cambiar tema" style="background: none; border: none; cursor: pointer;">
+                        <!-- Ícono para el tema claro (sol) -->
+                        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24" style="display: none;">
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                            <line x1="12" y1="1" x2="12" y2="4" stroke="currentColor" stroke-width="2" />
+                            <line x1="12" y1="20" x2="12" y2="23" stroke="currentColor" stroke-width="2" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" />
+                            <line x1="1" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="2" />
+                            <line x1="20" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" />
+                        </svg>
 
-                <button type="button" id="theme-toggle" aria-label="Cambiar tema" style="background: none; border: none; cursor: pointer;">
-                    <!-- Ícono para el tema claro (sol) -->
-                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24" style="display: none;">
-                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
-                        <line x1="12" y1="1" x2="12" y2="4" stroke="currentColor" stroke-width="2" />
-                        <line x1="12" y1="20" x2="12" y2="23" stroke="currentColor" stroke-width="2" />
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" />
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" />
-                        <line x1="1" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="2" />
-                        <line x1="20" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" />
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" />
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" />
-                    </svg>
-
-                    <!-- Ícono para el tema oscuro (luna) -->
-                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
-                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 1021 12.79z" stroke="currentColor" stroke-width="2" />
-                    </svg>
-                </button>
-
+                        <!-- Ícono para el tema oscuro (luna) -->
+                        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 1021 12.79z" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -44,7 +85,7 @@
 
     <footer class="footer text-muted">
         <div class="container">
-            &copy; 2024 - Proyecto web de Diseño de Software - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; Verano 2024 - Proyecto web de Diseño de Software - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

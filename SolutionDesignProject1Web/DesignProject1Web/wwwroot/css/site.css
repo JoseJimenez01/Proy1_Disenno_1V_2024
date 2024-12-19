@@ -29,9 +29,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* ------------- Definir colores para lo del cambio de tema ------------- */
 .navbar, footer, nav button, footer div {
     padding: 10px;
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
+    background-color: #1D993F;
+    color: #000000;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -42,7 +45,60 @@ body.dark-mode {
     color: #e0e0e0;
 }
 
-body.dark-mode .navbar, body.dark-mode footer, body.dark-mode nav button, body.dark-mode footer div {
-    background-color: #5a5a5a;
-    color: #e0e0e0;
+body.dark-mode nav button{
+    color: #000000;
 }
+
+body.dark-mode .navbar, body.dark-mode footer, body.dark-mode footer div {
+    background-color: #5a5a5a;
+    color: #ffffff;
+}
+/* --------------------------------------------------------------------- */
+
+/* Acomodar los elementos del navbar horizontalmente */
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Divs de los botones blancos con transparencia al 50%, menos el boton del cambio de tema */
+.div-conversor, .div-divisas, .div-favoritos, .div-LogIn, .div-cambioIdioma, .div-SignUp {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco con 50% de transparencia */
+    padding: 10px; /* Espacio interno entre el borde del div y la imagen */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    display: inline-block; /* Ajusta el tamaño del div al contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera (opcional) */
+}
+
+/* ------- Para acomodar la imagen y ajustarlo al contenedor del SignIn ---------- */
+/* Imagen dentro del contenedor */
+.div-SignUp img {
+    display: block; /* Elimina espacios innecesarios debajo de la imagen */
+    max-width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Para colocar el icono de google en la navbar */
+.imagen-texto {
+    display: flex; /* Coloca la imagen y el texto en línea */
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espaciado entre la imagen y el texto */
+    text-decoration: none;
+    font-size: 16px;
+    /*color: black;*/
+}
+
+.imagen-texto img {
+    width: 20px; /* Ajusta el tamaño de la imagen */
+    height: 20px;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* Div del cambio de tema con la misma apariencia */
+.div-cambioTema {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+

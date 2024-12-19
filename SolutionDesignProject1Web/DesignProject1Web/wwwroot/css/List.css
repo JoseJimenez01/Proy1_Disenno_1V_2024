@@ -1,0 +1,85 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile-button, .language-selector {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contenedor principal */
+.main-container {
+    background-color: #f0fff0;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Lista de divisas */
+.currency-list {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.currency-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.currency-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Contenedor del gráfico */
+.chart-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

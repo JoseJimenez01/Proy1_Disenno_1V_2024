@@ -2,61 +2,122 @@
 @{
     ViewData["Title"] = "Lista de Divisas";
 }
+<link rel="stylesheet" href="~/css/List.css">
+
+<!-- Librería para gráfico -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- Navbar -->
-<nav style="display: flex; justify-content: space-between; align-items: center; background-color: #4CAF50; padding: 10px; color: white;">
-    <!-- redirecciones a otras paginas de la app -->
-    <div style="display: flex; gap: 20px;">
-        <button style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">Conversor</button>
-        <button style="background: none; border: none; color: white; font-size: 18px; cursor: pointer;">Favoritas</button>
+<nav class="navbar">
+    <!-- Redirecciones a otras páginas de la app -->
+    <div class="navbar-left">
+        <button class="nav-button">Conversor</button>
+        <button class="nav-button">Favoritas</button>
     </div>
 
-    <!-- Seleccion de idioam y perfil -->
-    <div style="display: flex; gap: 20px;">
-        <button style="background: rgba(255, 255, 255, 0.7); border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">
-            Perfil
-        </button>
-        <select style="background: rgba(255, 255, 255, 0.7); border: none; padding: 5px; border-radius: 5px; cursor: pointer;">
+    <!-- Selección de idioma y perfil -->
+    <div class="navbar-right">
+        <button class="profile-button">Perfil</button>
+        <select class="language-selector">
             <option selected>Español</option>
             <option>Inglés</option>
         </select>
     </div>
 </nav>
 
-<!-- Div principal: Aqui va tanto la lista de divisas como el grafico de la divisa seleccionada -->
-<div style="background-color: #f0fff0; padding: 20px; margin: 20px auto; width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+<!-- Div principal -->
+<div class="main-container">
+    <div class="content-wrapper">
+        <!-- Lista de Divisas -->
+        <div class="currency-list">
+            <h3>Buscar divisas</h3>
+            <input type="text" placeholder="Buscar divisas..." class="search-bar">
 
-    <div style="display: flex; gap: 20px;">
-        <!-- Lista de Divisas: Esto debe usar la informacion sacada del API -->
-        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
-            <h3 style="margin-bottom: 10px;">Buscar divisas</h3>
-            <input type="text" placeholder="Buscar divisas..."
-                   style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
-
-            <!-- Div con cada una de las divisas sacadas: Esto debe ser un for each una vez obtenido el currencyRates del API -->
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+            <!-- Divisas cargadas -->
+            <div class="currency-items">
+                <div class="currency-item" data-currency="USD" data-values="[65, 59, 80, 81, 56, 55, 40]">
                     <strong>Dólar</strong><br>USD - 0.00
                 </div>
-                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                <div class="currency-item" data-currency="CRC" data-values="[45, 49, 60, 71, 66, 65, 50]">
                     <strong>Colón Costarricense</strong><br>CRC - 0.00
                 </div>
-                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                <div class="currency-item" data-currency="EUR" data-values="[85, 79, 70, 91, 86, 85, 90]">
                     <strong>EURO</strong><br>EUR - 0.00
                 </div>
-                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                <div class="currency-item" data-currency="ARS" data-values="[25, 29, 40, 51, 36, 35, 30]">
                     <strong>Peso Argentino</strong><br>ARS - 0.00
                 </div>
-                <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f9f9f9;">
+                <div class="currency-item" data-currency="SYP" data-values="[5, 9, 10, 11, 16, 15, 10]">
                     <strong>Libra Siria</strong><br>SYP - 0.00
                 </div>
             </div>
         </div>
 
-        <!-- Contenedor de Gráfico: Usar MYCHART.js para mostrar el grafico con los datos cargados (tiempo-valor) -->
-        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+        <!-- Contenedor del gráfico -->
+        <div class="chart-container">
             <h3>Divisa seleccionada</h3>
-            <p>Gráfico de la divisa seleccionada</p>
-        </div>
+            <!-- Canvas para el gráfico -->
+            <canvas id="currencyChart"></canvas>
+        </div>>
     </div>
 </div>
+
+<script>
+
+    // Filtrar divisas por busqueda
+    document.querySelector('.search-bar').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const currencyItems = document.querySelectorAll('.currency-item');
+
+        currencyItems.forEach(item => {
+            const currencyName = item.textContent.toLowerCase();
+            if (currencyName.includes(query)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    // Config inicial del gráfico
+    const labels = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"];
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Divisa seleccionada',
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+    };
+
+    // Se crea una instancia de grafico al cargar la pagina
+    let currencyChart;
+    window.onload = function() {
+        const ctx = document.getElementById('currencyChart').getContext('2d');
+        currencyChart = new Chart(ctx, config);
+
+        // Cada elemento divisa en el div izquierdo 
+        const currencyItems = document.querySelectorAll('.currency-item');
+        currencyItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const currencyName = this.getAttribute('data-currency');
+                const currencyValues = JSON.parse(this.getAttribute('data-values'));
+
+                currencyChart.data.datasets[0].data = currencyValues;
+                currencyChart.data.datasets[0].label = currencyName;
+                currencyChart.update();
+
+                // El gráfico cambia de titulo depende del nombre de la moneda seleccionada
+                document.getElementById('chart-title').innerText = `Gráfico de ${currencyName}`;
+            });
+        });
+    };
+
+</script>
